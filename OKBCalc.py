@@ -1,14 +1,35 @@
 import math
 
-num1 = round(15000) 
-num2 = round(30000)
-num3 = round(45000)
-num4 = round(60000)
-num5 = round(75000)
-num0 = int(input("Enter the number of days left 1-30:"))
+while True:
+  
+  num1 = 15000
+  num2 = 30000
+  num3 = 45000
+  num4 = 60000
+  num5 = 75000
+  num6 = 30
+  num0 = int(input("Enter the number of days left 1-30:"))
+  print("")
+  if num0 > 30:
+    print("")
+    print("Number too high")
+    print("")
+  else: 
+    print("Minimum OKB needed for Coefficent 1 with",(num0),"days left is",math.ceil(num1/num0),"OKB")
+    print("")
+    print("Minimum OKB needed for Coefficent 2 with",(num0),"days left is",math.ceil(num2/num0),"OKB")
+    print("")
+    print("Minimum OKB needed for Coefficent 3 with",(num0),"days left is",math.ceil(num3/num0),"OKB")
+    print("")
+    print("Minimum OKB needed for Coefficent 4 with",(num0),"days left is",math.ceil(num4/num0),"OKB")
+    print("")
+    print("Minimum OKB needed for Coefficent 5 with",(num0),"days left is",math.ceil(num5/num0),"OKB+") 
+    print("")
 
-print("Coefficent 1 =",math.ceil(num1/num0),"OKB")
-print("Coefficent 2 =",math.ceil(num2/num0),"OKB")
-print("Coefficent 3 =",math.ceil(num3/num0),"OKB")
-print("Coefficent 4 =",math.ceil(num4/num0),"OKB")
-print("Coefficent 5 =",math.ceil(num5/num0),"OKB+")
+  answer = "y"
+  answer = input("Would you like to run again, type y for yes and n for no: ")
+  print("")
+  if answer == "y":
+    continue    
+  else:
+    break
