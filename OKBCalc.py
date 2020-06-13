@@ -7,7 +7,7 @@ while True:
   num3 = 45000
   num4 = 60000
   num5 = 75000
-  num6 = 30
+  num6 = 5
   num0 = int(input("Enter the number of days left 1-30:"))
   print("")
   if num0 > 30:
